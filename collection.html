@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="NFT.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <nav class="sidebar ">
+        <div class="navbar">
+            <a href="homepage.html"><img src="images/Logo.png" alt="Logo" id="logo"></a>
+            <a href="homepage.html"><img src="images/DashBoard.png" alt="DashBoard" id="dashboard"></a>
+            <a href="bid.html"><img src="images/bid.png" alt="Bid" id="bid"></a>
+            <a href="saved.html"><img src="images/heart.png" alt="Heart" id="liked"></a>
+            <a href="collection.html"><img src="images/Collection-active.png" alt="Collection" id="collection"></a>
+            <a href="profile.html"><img src="images/Profile.png" alt="Profile" id="profile"></a>
+            <a href="setting.html"><img src="images/setting.png" alt="Setting" id="setting"></a>
+        </div>
+        <div class="signout">
+            <a href="#"><img src="images/sign-out.png" alt="Sign Out"></a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <header class="pageheader">
+            <div class="searchbox">
+                <img src="images/Search.png" id="searchbar"  alt="">
+                <input type="search" id="search" placeholder="Search Here">
+            </div>
+            <div class="headright">
+                <img src="images/day.png" alt="" id="theme" onclick="toggleColors()">
+                <img src="images/bell.png" alt="" id="notification">
+                <img src="images/user-avatar.png" id="user-profile" alt="User Avatar">
+            </div>
+        </header>
+
+        <section>
+            <div class="m50">
+                <h1>Collections</h1>
+                <div class="dis-bet">
+                    <h3>Welcome Collections Page</h3>
+                    <div class="dflex10">
+                        <h3>Home</h3>
+                        <div>></div>
+                        <h3>Collections</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="select-row mb25">
+            <div>all</div>
+            <div>artwork</div>
+            <div>book</div>
+        </div>
+
+        <section class="nft-grid">
+            <div class="nft-card card">
+                <img class="nft-image" src="images/NFT (1).png" alt="">
+                <div class="nft-details">
+                    <div class="nft-name">Liquid Wave</div>
+                    <div class="dis-bet">
+                        <div class="auction-time">Auction time</div>
+                        <div class="current-bid">Current Bid</div>
+                    </div>
+                    <div class="theme-color">0.05 ETH</div>
+                    <div class="dis-bet">
+                        <div class="auction-time-1">3h 1m 50s</div>
+                        <div class="highest-bid">0.15 ETH</div>
+                    </div>
+                </div>
+                <div class="btn1">Place a Bid</div>
+            </div>
+            <div class="nft-card card">
+                <img class="nft-image" src="images/NFT (1).png" alt="">
+                <div class="nft-details">
+                    <div class="nft-name">Liquid Wave</div>
+                    <div class="dis-bet">
+                        <div class="auction-time">Auction time</div>
+                        <div class="current-bid">Current Bid</div>
+                    </div>
+                    <div class="theme-color">0.05 ETH</div>
+                    <div class="dis-bet">
+                        <div class="auction-time-1">3h 1m 50s</div>
+                        <div class="highest-bid">0.15 ETH</div>
+                    </div>
+                </div>
+                <div class="btn1">Place a Bid</div>
+            </div>
+            <div class="nft-card card">
+                <img class="nft-image" src="images/NFT (1).png" alt="">
+                <div class="nft-details">
+                    <div class="nft-name">Liquid Wave</div>
+                    <div class="dis-bet">
+                        <div class="auction-time">Auction time</div>
+                        <div class="current-bid">Current Bid</div>
+                    </div>
+                    <div class="theme-color">0.05 ETH</div>
+                    <div class="dis-bet">
+                        <div class="auction-time-1">3h 1m 50s</div>
+                        <div class="highest-bid">0.15 ETH</div>
+                    </div>
+                </div>
+                <div class="btn1">Place a Bid</div>
+            </div>
+            <div class="nft-card card">
+                <img class="nft-image" src="images/NFT (1).png" alt="">
+                <div class="nft-details">
+                    <div class="nft-name">Liquid Wave</div>
+                    <div class="dis-bet">
+                        <div class="auction-time">Auction time</div>
+                        <div class="current-bid">Current Bid</div>
+                    </div>
+                    <div class="theme-color">0.05 ETH</div>
+                    <div class="dis-bet">
+                        <div class="auction-time-1">3h 1m 50s</div>
+                        <div class="highest-bid">0.15 ETH</div>
+                    </div>
+                </div>
+                <div class="btn1">Place a Bid</div>
+            </div>
+            <div class="nft-card card">
+                <img class="nft-image" src="images/NFT (1).png" alt="">
+                <div class="nft-details">
+                    <div class="nft-name">Liquid Wave</div>
+                    <div class="dis-bet">
+                        <div class="auction-time">Auction time</div>
+                        <div class="current-bid">Current Bid</div>
+                    </div>
+                    <div class="theme-color">0.05 ETH</div>
+                    <div class="dis-bet">
+                        <div class="auction-time-1">3h 1m 50s</div>
+                        <div class="highest-bid">0.15 ETH</div>
+                    </div>
+                </div>
+                <div class="btn1">Place a Bid</div>
+            </div>
+            <div class="nft-card card">
+                <img class="nft-image" src="images/NFT (1).png" alt="">
+                <div class="nft-details">
+                    <div class="nft-name">Liquid Wave</div>
+                    <div class="dis-bet">
+                        <div class="auction-time">Auction time</div>
+                        <div class="current-bid">Current Bid</div>
+                    </div>
+                    <div class="theme-color">0.05 ETH</div>
+                    <div class="dis-bet">
+                        <div class="auction-time-1">3h 1m 50s</div>
+                        <div class="highest-bid">0.15 ETH</div>
+                    </div>
+                </div>
+                <div class="btn1">Place a Bid</div>
+            </div>
+            <div class="nft-card card">
+                <img class="nft-image" src="images/NFT (1).png" alt="">
+                <div class="nft-details">
+                    <div class="nft-name">Liquid Wave</div>
+                    <div class="dis-bet">
+                        <div class="auction-time">Auction time</div>
+                        <div class="current-bid">Current Bid</div>
+                    </div>
+                    <div class="theme-color">0.05 ETH</div>
+                    <div class="dis-bet">
+                        <div class="auction-time-1">3h 1m 50s</div>
+                        <div class="highest-bid">0.15 ETH</div>
+                    </div>
+                </div>
+                <div class="btn1">Place a Bid</div>
+            </div>
+            <div class="nft-card card">
+                <img class="nft-image" src="images/NFT (1).png" alt="">
+                <div class="nft-details">
+                    <div class="nft-name">Liquid Wave</div>
+                    <div class="dis-bet">
+                        <div class="auction-time">Auction time</div>
+                        <div class="current-bid">Current Bid</div>
+                    </div>
+                    <div class="theme-color">0.05 ETH</div>
+                    <div class="dis-bet">
+                        <div class="auction-time-1">3h 1m 50s</div>
+                        <div class="highest-bid">0.15 ETH</div>
+                    </div>
+                </div>
+                <div class="btn1">Place a Bid</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="nft.js"></script>
+</body>

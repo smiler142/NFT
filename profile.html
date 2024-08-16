@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="NFT.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="sidebar ">
+        <div class="navbar">
+            <a href="homepage.html"><img src="images/Logo.png" alt="Logo" id="logo"></a>
+            <a href="homepage.html"><img src="images/DashBoard.png" alt="DashBoard" id="dashboard"></a>
+            <a href="bid.html"><img src="images/bid.png" alt="Bid" id="bid"></a>
+            <a href="saved.html"><img src="images/heart.png" alt="Heart" id="liked"></a>
+            <a href="collection.html"><img src="images/Collection.png" alt="Collection" id="collection"></a>
+            <a href="profile.html"><img src="images/Profile-active.png" alt="Profile" id="profile"></a>
+            <a href="setting.html"><img src="images/setting.png" alt="Setting" id="setting"></a>
+        </div>
+        <div class="signout">
+            <a href="#"><img src="images/sign-out.png" alt="Sign Out"></a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <header class="pageheader">
+            <div class="searchbox">
+                <img src="images/Search.png" id="searchbar"  alt="">
+                <input type="search" id="search" placeholder="Search Here">
+            </div>
+            <div class="headright">
+                <img src="images/day.png" alt="" id="theme" onclick="toggleColors()">
+                <img src="images/bell.png" alt="" id="notification">
+                <img src="images/user-avatar.png" id="user-profile" alt="User Avatar">
+            </div>
+        </header>
+
+        <section>
+            <div class="m50">
+                <h1>Profile</h1>
+                <div class="dis-bet">
+                    <h3>Welcome Profile Page</h3>
+                    <div class="dflex10">
+                        <h3>Home</h3>
+                        <div>></div>
+                        <h3>Profile</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-content">
+                <div class="card">
+                    <img src="images/lady-avatar.png" alt="">
+                    <h2>Welcome, John Smith</h2>
+                    <h3>Looks like you are not verified yet. Verify yourself to use the full potential of Xtrader.</h3>
+                    <div class="column1">
+                        <a href="#" class="dflex10">
+                            <div class="icon-box bggreen">
+                                <img src="images/tick.png" alt="">
+                            </div>
+                            <h3 class="theme-color">Verify account</h3>
+                        </a>
+                        <hr>
+                        <a href="#"  class="dflex10">
+                            <div class="icon-box">
+                                <img src="images/encrypted.png" alt="">
+                            </div>
+                            <h3 class="theme-color">Two-factor Authentication ( 2FA )</h3>
+                        </a>
+                    </div>
+                </div>
+                <div class="content-display">
+                    <h2 class="row-headings">Following</h2>
+                    <div class="creators-grid">
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Unfollow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Unfollow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Unfollow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Unfollow</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-row">
+            <h2 class="bought">My bought</h2>
+            <div class="nft-grid">
+                <div class="card">
+                    <img src="images/NFT (1).png" alt="">
+                    <h2>Liquid Wave</h2>
+                    <img class="userpic" src="images/lady-avatar.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/NFT (1).png" alt="">
+                    <h2>Liquid Wave</h2>
+                    <img class="userpic" src="images/lady-avatar.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/NFT (1).png" alt="">
+                    <h2>Liquid Wave</h2>
+                    <img class="userpic" src="images/lady-avatar.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/NFT (1).png" alt="">
+                    <h2>Liquid Wave</h2>
+                    <img class="userpic" src="images/lady-avatar.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/NFT (1).png" alt="">
+                    <h2>Liquid Wave</h2>
+                    <img class="userpic" src="images/lady-avatar.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="profile-row">
+            <h2 class="bought">My Collections</h2>
+            <div class="nft-grid">
+                <div class="card">
+                    <img src="images/NFT (1).png" alt="">
+                    <h2>Liquid Wave</h2>
+                    <img class="userpic" src="images/lady-avatar.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/NFT (1).png" alt="">
+                    <h2>Liquid Wave</h2>
+                    <img class="userpic" src="images/lady-avatar.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/NFT (1).png" alt="">
+                    <h2>Liquid Wave</h2>
+                    <img class="userpic" src="images/lady-avatar.png" alt="">
+                </div>
+                <div class="card">
+                    <img src="images/NFT (1).png" alt="">
+                    <h2>Liquid Wave</h2>
+                    <img class="userpic" src="images/lady-avatar.png" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="nft.js"></script>
+</body>

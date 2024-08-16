@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --mainbg : #131129 ;
+    --secondbg : #1D1932;
+    --white : #FFFFFF;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: var(--white);
+}
+body{
+    background: var(--mainbg);
+}
+.sidebar{
+    position: fixed;
+    width: 80px;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: var(--secondbg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.sidebar a:hover{
+    transform: scale(1.2);
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+#logo{
+    width: 30px;
+    height: 30px;
+}
+#dashboard,#profile{
+    width: 19px;
+    height: 22px;
+}
+#bid,#setting{
+    width: 19px;
+    height: 19px;
+}
+#heart{
+    width: 19px;
+    height: 16.74px;
+}
+#collection{
+    width: 22px;
+    height: 22px;
+}
+.signout{
+    margin-bottom: 75px;
+}
+.main-content{
+    margin: 30px 70px auto 150px;
+}
+.pageheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.searchbox{
+    background: var(--secondbg);
+    border-radius: 12px;
+    max-width: 380px;
+    width: 100%;
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+}
+#search{
+    all: unset;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #68676E;
+    width: 100%;
+}
+.headright{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.headright img{
+    cursor: pointer;
+}
+.headright img:hover{
+    transform: scale(1.2);
+}
+#user-profile{
+    width: 43px;
+    height: 43px;
+    margin-left: 16px;
+}
+.header-cards{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.bg1{
+    background: rgba(111, 79, 242, 0.5);
+    border-radius: 21px;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+#card-1,#card-2{
+    width: 50%;
+    height: 228px;
+    border-radius: 21px;
+    overflow: hidden;
+}
+#card-1{
+    background-image: url(images/Discover.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card-1-head{
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 39px;
+    color: white;
+    width: 60%;
+}
+.card-1-details{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: start;
+    color: white;
+    margin: 10px 0px 30px;
+}
+.btngrp{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.btn1,.btn2{
+    width: 133px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    cursor: pointer;
+}
+.btn1{
+    background: #6F4FF2;
+}
+.btn2{
+    background: #DC3546;
+}
+#card-2{
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+.card-2-image{
+    width: 50%;
+    background-image: url(images/NFT.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 25px;
+}
+.card-2-details{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+.customerdetails{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.customername{
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    color: var(--white);
+}
+.nft-name{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--white);
+}
+.bid-content{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.dis-bet{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.auction-time,.current-bid{
+    color: var(--white);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+}
+.auction-time-1,.highest-bid{
+    color: #6C7AA0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+}
+.theme-color{
+    color: #6F4FF2;
+}
+a{
+    text-decoration: none;
+}
+.status-bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: capitalize;
+    color: var(--white);
+    margin: 70px auto 30px;
+}
+.row-headings{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color: var(--white);
+}
+.select-row{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: capitalize;
+}
+.select-row > div{
+    padding: 3px 10px;
+    background: #6F4FF2;
+    border-radius: 14px;
+    color: white;
+}
+.nft-grid{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.nft-card{
+    max-width: 282px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.nft-card > .nft-image{
+    max-width: 243px;
+    width: 100%;
+    height: 187px;
+    aspect-ratio: 1.317;
+    height: unset;
+}
+.nft-details .nft-name{
+    margin-bottom: 20px;
+}
+.nft-details .theme-color{
+    font-size: 14px;
+    text-align: end;
+    margin: 10px auto 5px;
+}
+.nft-card .btn1{
+    width: 100%;
+}
+.content-box{
+    display: flex;
+    column-gap: 30px;
+    row-gap: 50px;
+    margin: 70px auto;
+}
+.trending-bids{
+    width: 25%;
+}
+.ethprice{
+    width: 45%;
+}
+.statistics{
+    width: 30%;
+}
+.ethprice .card, .statistics .card{
+    height: -webkit-fill-available;
+}
+.content-display{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.card{
+    background: var(--secondbg);
+    border-radius: 18px;
+    padding: 20px;
+}
+.card-pallate{
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.trending-bids .card{
+    justify-content: space-between;
+}
+.icon-box{
+    width: 55px;
+    height: 55px;
+    background: #6F4FF2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pallate-details{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: auto 40px auto 25px;
+}
+.pallate-numbers,h1{
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--white);
+}
+.pallate-topic,h3{
+    font-weight: 400;
+    font-size: 14px;
+    color: #68676E;
+}
+.pallate-percentage{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #50BB25;
+}
+.colored{
+    color: #DC3546 !important;
+}
+.bgred{
+    background-color: #DC3546;
+}
+.bggreen{
+    background: #50BB25;
+}
+.bgyellow{
+    background: #F9D62C;
+}
+.dflex10{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.ethprice .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.statistics .card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.statistics-chart{
+    max-width: 283PX;
+    width: 100%;
+    height: 259px;
+}
+.rowcenter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.column{
+    display: flex;
+    flex-direction: column;
+}
+.recent-activity{
+    width: 440PX;
+}
+.recent-activity .column{
+    margin-left: 20px;
+}
+.gap20{
+    gap: 20px;
+}
+.recent-activity .rowcenter{
+    margin-block: 15px;
+    justify-content: space-between;
+}
+h2{
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+}
+hr{
+    border: 0.2px solid #68676E;
+}
+.creators-grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: inherit;
+}
+.creators-grid .card{
+    max-width: 356px;
+    width: 100%;
+    height: 82px;    
+}
+.creators-grid button{
+    border: 1px solid #6F4FF2;
+    background: transparent;
+    border-radius: 9px;
+    width: 85px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.activebids{
+    margin: 70px auto;
+}
+.activebids .row-headings{
+    margin-bottom: 50px;
+}
+table{
+    border-collapse: separate;
+    width: 100%;
+    border-spacing: 0 30px;
+}
+tr{
+    border-radius: 18px;
+}
+th{
+    padding: 30px;
+    text-align: start;
+    border-bottom: 0.3px solid #6C7AA0;
+}
+th:last-of-type{
+    text-align: center;
+}
+td:last-of-type{
+    text-align: center;
+    border-radius: 0px 18px 18px 0px;
+    cursor: pointer;
+}
+td:first-of-type{
+    border-radius:  18px 0px 0px 18px;
+}
+td{
+    padding: 20px;
+}
+.active-item-image{
+    width: 65px;
+    height: 44px;
+    border-radius: 20px;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    accent-color: #6F4FF2;
+}
+
+/* ---------------Bid-Page------------------ */
+
+.m50{
+    margin: 50px 0px;
+}
+#bid-main .btngrp{
+    margin-bottom: 50px;
+}
+#bid-main .card{
+    width: 25%;
+    gap: 25px;
+}
+.mb25{
+    margin-bottom: 25px;
+}
+
+/* ---------------Settings-Page------------------- */
+
+.setting-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+ul{
+    list-style-type: none;
+}
+.profile-settings{
+    display: flex;
+    align-items: center;
+    gap: 45px;
+}
+.profile{
+    width: 50%;
+}
+.profile>h2{
+    margin-bottom: 20px;
+}
+.profile > .card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.setting-card{
+    gap: 10px !important;
+}
+.profile input{
+    all: unset;
+    background: var(--mainbg);
+    border-radius: 8px;
+    padding: 10px;
+    width: 90%;
+}
+.setting-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+    width: 49%;
+}
+.personal-info .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    justify-content: space-between;
+}
+.personal-info input{
+    all: unset;
+    background: var(--mainbg);
+    border-radius: 8px;
+    padding: 10px;   
+}
+
+/* -----------------Profile-Page----------------- */
+
+.profile-content{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 30px;
+}
+.profile-content .card{
+    max-width: 380px;
+    width: 100%;
+    gap: 10px;
+}
+.column1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+.profile-content .content-display{
+    width: 100%;
+}
+.profile-content .icon-box{
+    width: 30px;
+    height: 30px;
+}
+.profile-content button{
+    background: #DC3546;
+    border: none;
+    color: white;
+}
+.profile-row{
+    margin: 50px 0px;
+}
+.bought{
+    margin-bottom: 30px;
+}
+.profile-row .card{
+    position: relative;
+}
+.profile-row .userpic{
+    position: absolute;
+    right: 20%;
+    bottom: 12%;
+}
+#mobile-logo{
+    display: none;
+}
+#mobile-signout{
+    display: none;
+}
+
+@media screen and (max-width:425px){
+    .sidebar{
+        flex-direction: row;
+        width: 100%;
+        height: 60px;
+        inset: auto;
+        bottom: 0;
+        justify-content: none;
+    }
+    .navbar{
+        flex-direction: row;
+        margin: auto;
+        justify-content: space-between;
+        gap: unset;
+        width: 90%;
+    }
+    .signout{
+        display: none;
+    }
+    #mobile-signout,#mobile-logo{
+        display: block;
+        width: 43px;
+        height: 43px;
+    }    
+    #logo{
+        display: none;
+    }
+    .main-content{
+        margin: auto;
+        width: 90%;
+        overflow: hidden;
+        padding-top: 30px;
+    }
+    .searchbox{
+        padding: 12px 10px;
+        max-width: 192px;
+        width: 100%;
+    }
+    #search{
+        min-width: fit-content;
+    }
+    #user-profile{
+        margin: 0px;
+    }
+    .header-cards,#card-2,.content-box{
+        flex-direction: column;
+    }
+    #card-1, #card-2,.card-1-head,.card-2-image,.card-2-details,.trending-bids,.ethprice,.statistics{
+        width: 100%;
+        height: unset;
+    }
+    .bg1{
+        padding: 20px;
+    }
+    .bid-content{
+        gap: 20px;
+    }
+    .bid-content .btngrp{
+        justify-content: center;
+    }
+    .select-row > div{
+        font-size: 14px;
+    }
+    .nft-card,.nft-card > .nft-image{
+        max-width: unset;
+    }
+    .nft-grid .nft-card:not(:first-child){
+        display: none;
+    }
+    .content-display{
+        gap: 20px;
+    }
+    .recent-activity{
+        width: 375px;
+    }
+}

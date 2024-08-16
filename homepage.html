@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NFT Marketplace</title>
+        <link rel="stylesheet" href="NFT.css">
+        <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+
+        <nav class="sidebar">
+            <div class="navbar">
+                <a href="homepage.html"><img src="images/Logo.png" alt="Logo" id="logo"></a>
+                <a href="homepage.html"><img src="images/DashBoard-active.png" alt="DashBoard" id="dashboard"></a>
+                <a href="bid.html"><img src="images/bid.png" alt="Bid" id="bid"></a>
+                <a href="saved.html"><img src="images/heart.png" alt="Heart" id="liked"></a>
+                <a href="collection.html"><img src="images/Collection.png" alt="Collection" id="collection"></a>
+                <a href="profile.html"><img src="images/Profile.png" alt="Profile" id="profile"></a>
+                <a href="setting.html"><img src="images/setting.png" alt="Setting" id="setting"></a>
+                <a href="#" id="mobile-signout"><img src="images/sign-out.png" alt="Sign Out"></a>
+            </div>
+            <div class="signout">
+                <a href="#"><img src="images/sign-out.png" alt="Sign Out"></a>
+            </div>
+        </nav>
+
+        <main class="main-content">
+
+            <header class="pageheader">
+                <a href="homepage.html" id="mobile-logo"><img src="images/Logo.png" alt="Logo" ></a>
+                <div class="searchbox">
+                    <img src="images/Search.png" id="searchbar"  alt="">
+                    <input type="search" id="search" placeholder="Search Here">
+                </div>
+                <div class="headright">
+                    <img src="images/day.png" alt="" id="theme" onclick="toggleColors()">
+                    <img src="images/bell.png" alt="" id="notification">
+                    <img src="images/user-avatar.png" id="user-profile" alt="User Avatar">
+                </div>
+            </header>
+
+            <section class="header-cards">
+                <div id="card-1">
+                    <div class="bg1" >
+                        <div class="card-1-head">Discover, Collect, Sell and Create your NFT</div>
+                        <p class="card-1-details">Digital marketplace for crypto collectibles and non fugable tokens</p>
+                        <div class="btngrp">
+                            <button class="btn1">
+                                Explore
+                            </button>
+                            <button class="btn2">
+                                Create
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div id="card-2" class="card">
+                    <div class="card-2-image"></div>
+                    <div class="card-2-details">
+                        <div class="customerdetails">
+                            <img src="images/lady-avatar.png" alt="">
+                            <div class="customername">John Abraham</div>
+                        </div>
+                        <div class="nft-name">Birghten LQ</div>
+                        <div class="bid-content">
+                            <div class="dis-bet">
+                                <div class="auction-time">Auction time</div>
+                                <div class="current-bid">Current Bid : <span class="theme-color">0.05 ETH</span></div>
+                            </div>
+                            <div class="dis-bet">
+                                <div class="auction-time-1">3h 1m 50s</div>
+                                <div class="highest-bid">0.15 ETH</div>
+                            </div>
+                            <div class="btngrp">
+                                <button class="btn1">
+                                    Place a Bid
+                                </button>
+                                <button class="btn2">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="status-bar">
+                <div class="row-headings">trending bids</div>
+                <div class="select-row">
+                    <div>all</div>
+                    <div>artwork</div>
+                    <div>book</div>
+                </div>
+            </section>
+
+            <section class="nft-grid">
+                <div class="nft-card card">
+                    <img class="nft-image" src="images/NFT (1).png" alt="">
+                    <div class="nft-details">
+                        <div class="nft-name">Liquid Wave</div>
+                        <div class="dis-bet">
+                            <div class="auction-time">Auction time</div>
+                            <div class="current-bid">Current Bid</div>
+                        </div>
+                        <div class="theme-color">0.05 ETH</div>
+                        <div class="dis-bet">
+                            <div class="auction-time-1">3h 1m 50s</div>
+                            <div class="highest-bid">0.15 ETH</div>
+                        </div>
+                    </div>
+                    <div class="btn1">Place a Bid</div>
+                </div>
+                <div class="nft-card card">
+                    <img class="nft-image" src="images/NFT (1).png" alt="">
+                    <div class="nft-details">
+                        <div class="nft-name">Liquid Wave</div>
+                        <div class="dis-bet">
+                            <div class="auction-time">Auction time</div>
+                            <div class="current-bid">Current Bid</div>
+                        </div>
+                        <div class="theme-color">0.05 ETH</div>
+                        <div class="dis-bet">
+                            <div class="auction-time-1">3h 1m 50s</div>
+                            <div class="highest-bid">0.15 ETH</div>
+                        </div>
+                    </div>
+                    <div class="btn1">Place a Bid</div>
+                </div>
+                <div class="nft-card card">
+                    <img class="nft-image" src="images/NFT (1).png" alt="">
+                    <div class="nft-details">
+                        <div class="nft-name">Liquid Wave</div>
+                        <div class="dis-bet">
+                            <div class="auction-time">Auction time</div>
+                            <div class="current-bid">Current Bid</div>
+                        </div>
+                        <div class="theme-color">0.05 ETH</div>
+                        <div class="dis-bet">
+                            <div class="auction-time-1">3h 1m 50s</div>
+                            <div class="highest-bid">0.15 ETH</div>
+                        </div>
+                    </div>
+                    <div class="btn1">Place a Bid</div>
+                </div>
+                <div class="nft-card card">
+                    <img class="nft-image" src="images/NFT (1).png" alt="">
+                    <div class="nft-details">
+                        <div class="nft-name">Liquid Wave</div>
+                        <div class="dis-bet">
+                            <div class="auction-time">Auction time</div>
+                            <div class="current-bid">Current Bid</div>
+                        </div>
+                        <div class="theme-color">0.05 ETH</div>
+                        <div class="dis-bet">
+                            <div class="auction-time-1">3h 1m 50s</div>
+                            <div class="highest-bid">0.15 ETH</div>
+                        </div>
+                    </div>
+                    <div class="btn1">Place a Bid</div>
+                </div>
+                <div class="nft-card card">
+                    <img class="nft-image" src="images/NFT (1).png" alt="">
+                    <div class="nft-details">
+                        <div class="nft-name">Liquid Wave</div>
+                        <div class="dis-bet">
+                            <div class="auction-time">Auction time</div>
+                            <div class="current-bid">Current Bid</div>
+                        </div>
+                        <div class="theme-color">0.05 ETH</div>
+                        <div class="dis-bet">
+                            <div class="auction-time-1">3h 1m 50s</div>
+                            <div class="highest-bid">0.15 ETH</div>
+                        </div>
+                    </div>
+                    <div class="btn1">Place a Bid</div>
+                </div>
+                <div class="nft-card card">
+                    <img class="nft-image" src="images/NFT (1).png" alt="">
+                    <div class="nft-details">
+                        <div class="nft-name">Liquid Wave</div>
+                        <div class="dis-bet">
+                            <div class="auction-time">Auction time</div>
+                            <div class="current-bid">Current Bid</div>
+                        </div>
+                        <div class="theme-color">0.05 ETH</div>
+                        <div class="dis-bet">
+                            <div class="auction-time-1">3h 1m 50s</div>
+                            <div class="highest-bid">0.15 ETH</div>
+                        </div>
+                    </div>
+                    <div class="btn1">Place a Bid</div>
+                </div>
+                <div class="nft-card card">
+                    <img class="nft-image" src="images/NFT (1).png" alt="">
+                    <div class="nft-details">
+                        <div class="nft-name">Liquid Wave</div>
+                        <div class="dis-bet">
+                            <div class="auction-time">Auction time</div>
+                            <div class="current-bid">Current Bid</div>
+                        </div>
+                        <div class="theme-color">0.05 ETH</div>
+                        <div class="dis-bet">
+                            <div class="auction-time-1">3h 1m 50s</div>
+                            <div class="highest-bid">0.15 ETH</div>
+                        </div>
+                    </div>
+                    <div class="btn1">Place a Bid</div>
+                </div>
+                <div class="nft-card card">
+                    <img class="nft-image" src="images/NFT (1).png" alt="">
+                    <div class="nft-details">
+                        <div class="nft-name">Liquid Wave</div>
+                        <div class="dis-bet">
+                            <div class="auction-time">Auction time</div>
+                            <div class="current-bid">Current Bid</div>
+                        </div>
+                        <div class="theme-color">0.05 ETH</div>
+                        <div class="dis-bet">
+                            <div class="auction-time-1">3h 1m 50s</div>
+                            <div class="highest-bid">0.15 ETH</div>
+                        </div>
+                    </div>
+                    <div class="btn1">Place a Bid</div>
+                </div>
+            </section>
+
+            <section class="content-box">
+                <div class="content-display trending-bids">
+                    <div class="row-headings">Trending Bids</div>
+                    <div class="card-pallate card">
+                        <div class="dflex10">
+                            <div class="icon-box">
+                                <img src="images/wallet.png" alt="">
+                            </div>
+                            <div class="pallate-details">
+                                <div class="pallate-numbers">24K</div>
+                                <div class="pallate-topic">Artworks</div>
+                            </div>
+                        </div>
+                        <div class="pallate-percentage">+168.001%</div> 
+                    </div>
+                    <div class="card-pallate card">
+                        <div class="dflex10">
+                            <div class="icon-box bgred">
+                                <img src="images/wallet.png" alt="">
+                            </div>
+                            <div class="pallate-details">
+                                <div class="pallate-numbers">89</div>
+                                <div class="pallate-topic">Auction</div>
+                            </div>
+                        </div>
+                        <div class="pallate-percentage colored">-168.001%</div>
+                    </div>
+                    <div class="card-pallate card">
+                        <div class="dflex10">
+                            <div class="icon-box bggreen">
+                                <img src="images/wallet.png" alt="">
+                            </div>
+                            <div class="pallate-details">
+                                <div class="pallate-numbers">82K</div>
+                                <div class="pallate-topic">Creators</div>
+                            </div>
+                        </div>
+                        <div class="pallate-percentage">+168.001%</div>
+                    </div>
+                </div>
+                <div class="content-display ethprice">
+                    <div class="row-headings">ETH Price</div>
+                    <div class="card">
+                        <img src="images/chart.png" alt="">
+                    </div>
+                </div>
+                <div class="content-display statistics">
+                    <div class="row-headings">Statistics</div>
+                    <div class="card">
+                        <img class="statistics-chart" src="images/chart(1).png" alt="">
+                        <div class="dis-bet">
+                            <div class="dflex10">
+                                <img src="images/radio.png" alt="">
+                                <h3>Artwork Sold</h3>
+                            </div>
+                            <div class="dflex10">
+                                <img src="images/radio (1).png" alt="">
+                                <h3>Artwork CanCel</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-box">
+                <div class="content-display">
+                    <div class="dis-bet">
+                        <div class="row-headings">Recent Activity</div>
+                        <a class="theme-color" href="#">See more</a>
+                    </div>
+                    <div class="card recent-activity">
+                        <div class="rowcenter">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>Purchase by you for 0.05 ETH</h3>
+                                </div>
+                            </div>
+                            <h3>12 mins ago</h3>
+                        </div>
+                        <hr>
+                        <div class="rowcenter">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>0.06ETH Received</h3>
+                                </div>
+                            </div>
+                            <h3>12 mins ago</h3>
+                        </div>
+                        <hr>
+                        <div class="rowcenter">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>Started Following you</h3>
+                                </div>
+                            </div>
+                            <h3>12 mins ago</h3>
+                        </div>
+                        <hr>
+                        <div class="rowcenter">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>Has been sold by 12.75ETH</h3>
+                                </div>
+                            </div>
+                            <h3>12 mins ago</h3>
+                        </div>
+                        <hr>
+                        <div class="rowcenter">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>Purchase by you for 0.05 ETH</h3>
+                                </div>
+                            </div>
+                            <h3>12 mins ago</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-display">
+                    <div class="row-headings">Top Creators</div>
+                    <div class="creators-grid">
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                        <div class="card  dis-bet">
+                            <div class="dflex10">
+                                <img src="images/lady-avatar.png" alt="">
+                                <div class="column">
+                                    <h2>Papaya</h2>
+                                    <h3>60 Items</h3>
+                                </div>
+                            </div>
+                            <button>Follow</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activebids">
+                <div class="row-headings">Active Bids</div>
+                <table>
+                    <thead>
+                        <th><input type="checkbox" disabled></th>
+                        <th><h2>Item List</h2></th>
+                        <th><h2>Open Price</h2></th>
+                        <th><h2>Your Offer</h2></th>
+                        <th><h2>Recent Offer</h2></th>
+                        <th><h2>Time Left</h2></th>
+                        <th><h2>Action</h2></th>
+                    </thead>
+                    <tbody>
+                        <tr class="card">
+                            <td><input type="checkbox"></td>
+                            <td class="dflex10">
+                                <img src="images/NFT (2).png" alt="">
+                                <div class="column">
+                                    <h2>Cute Cube Cool</h2>
+                                    <h3>John Abraham</h3>
+                                </div>
+                            </td>
+                            <td>0.0025 ETH</td>
+                            <td>0.0025 ETH</td>
+                            <td>
+                                <div class="dflex10">
+                                    <img class="class="active-item-image"" src="images/men-avatar.png" alt="">
+                                    <h2>0.0025 ETH</h2>
+                                </div>
+                            </td>
+                            <td>2 Hours 1 min 30s</td>
+                            <td><img src="images/cross.png" alt=""></td>
+                        </tr>
+                        <tr class="card">
+                            <td><input type="checkbox"></td>
+                            <td class="dflex10">
+                                <img class="active-item-image" src="images/NFT (3).png" alt="">
+                                <div class="column">
+                                    <h2>Liquid Wave</h2>
+                                    <h3>John Abraham</h3>
+                                </div>
+                            </td>
+                            <td>0.0025 ETH</td>
+                            <td>0.0025 ETH</td>
+                            <td>
+                                <div class="dflex10">
+                                    <img src="images/men-avatar.png" alt="">
+                                    <h2>0.0025 ETH</h2>
+                                </div>
+                            </td>
+                            <td>2 Hours 1 min 30s</td>
+                            <td><img src="images/cross.png" alt=""></td>
+                        </tr>
+                        <tr class="card">
+                            <td><input type="checkbox"></td>
+                            <td class="dflex10">
+                                <img class="active-item-image" src="images/NFT (2).png" alt="">
+                                <div class="column">
+                                    <h2>Cute Cube Cool</h2>
+                                    <h3>John Abraham</h3>
+                                </div>
+                            </td>
+                            <td>0.0025 ETH</td>
+                            <td>0.0025 ETH</td>
+                            <td>
+                                <div class="dflex10">
+                                    <img src="images/men-avatar.png" alt="">
+                                    <h2>0.0025 ETH</h2>
+                                </div>
+                            </td>
+                            <td>2 Hours 1 min 30s</td>
+                            <td><img src="images/cross.png" alt=""></td>
+                        </tr>
+                        <tr class="card">
+                            <td><input type="checkbox"></td>
+                            <td class="dflex10">
+                                <img class="active-item-image" src="images/NFT (4).png" alt="">
+                                <div class="column">
+                                    <h2>Liquid Wave</h2>
+                                    <h3>John Abraham</h3>
+                                </div>
+                            </td>
+                            <td>0.0025 ETH</td>
+                            <td>0.0025 ETH</td>
+                            <td>
+                                <div class="dflex10">
+                                    <img src="images/men-avatar.png" alt="">
+                                    <h2>0.0025 ETH</h2>
+                                </div>
+                            </td>
+                            <td>2 Hours 1 min 30s</td>
+                            <td><img src="images/cross.png" alt=""></td>
+                        </tr>
+                        <tr class="card">
+                            <td><input type="checkbox"></td>
+                            <td class="dflex10">
+                                <img class="active-item-image" src="images/NFT (1).png" alt="">
+                                <div class="column">
+                                    <h2>Liquid Wave</h2>
+                                    <h3>John Abraham</h3>
+                                </div>
+                            </td>
+                            <td>0.0025 ETH</td>
+                            <td>0.0025 ETH</td>
+                            <td>
+                                <div class="dflex10">
+                                    <img src="images/men-avatar.png" alt="">
+                                    <h2>0.0025 ETH</h2>
+                                </div>
+                            </td>
+                            <td>2 Hours 1 min 30s</td>
+                            <td><img src="images/cross.png" alt=""></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+        <script src="nft.js"></script>
+    </body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Marketplace</title>
+    <link rel="stylesheet" href="NFT.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <nav class="sidebar ">
+        <div class="navbar">
+            <a href="homepage.html"><img src="images/Logo.png" alt="Logo" id="logo"></a>
+            <a href="homepage.html"><img src="images/DashBoard.png" alt="DashBoard" id="dashboard"></a>
+            <a href="bid.html"><img src="images/bid.png" alt="Bid" id="bid"></a>
+            <a href="saved.html"><img src="images/heart.png" alt="Heart" id="liked"></a>
+            <a href="collection.html"><img src="images/Collection.png" alt="Collection" id="collection"></a>
+            <a href="profile.html"><img src="images/Profile.png" alt="Profile" id="profile"></a>
+            <a href="setting.html"><img src="images/setting.png" alt="Setting" id="setting"></a>
+        </div>
+        <div class="signout">
+            <a href="#"><img src="images/sign-out.png" alt="Sign Out"></a>
+        </div>
+    </nav>
+
+    <main class="main-content">
+
+        <header class="pageheader">
+            <div class="searchbox">
+                <img src="images/Search.png" id="searchbar" alt="">
+                <input type="search" id="search" placeholder="Search Here">
+            </div>
+            <div class="headright">
+                <img src="images/day.png" alt="" id="theme" onclick="toggleColors()">
+                <img src="images/bell.png" alt="" id="notification">
+                <img src="images/user-avatar.png" id="user-profile" alt="User Avatar">
+            </div>
+        </header>
+
+        <section>
+            <div class="m50">
+                <h1>Setting</h1>
+                <div class="dis-bet">
+                    <h3>Welcome Setting Page</h3>
+                    <div class="dflex10">
+                        <h3>Home</h3>
+                        <div>></div>
+                        <h3>Setting</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="setting-content">
+            <ul class="btngrp">
+                <li class="theme-color">Profile</li>
+                <li>Application</li>
+                <li>Security</li>
+                <li>Activity</li>
+                <li>Payment Method</li>
+                <li>API</li>
+            </ul>
+
+            <div class="profile-settings">
+                <div class="profile">
+                    <h2>User Profile</h2>
+                    <div class="card">
+                        <div>
+                            <h2>Full Name</h2>
+                            <input type="text" placeholder="Enter your full name" name="name">
+                        </div>
+                        <div class="dflex10">
+                            <div class="icon-box">
+                                <img src="images/person.png" alt="">
+                            </div>
+                            <div class="column">
+                                <h2>John Smith</h2>
+                                <h3>Welcome Setting Page</h3>
+                            </div>
+                        </div>
+                        <div class="btn1">Save</div>
+                    </div>
+                </div>
+                <div class="profile">
+                    <h2>Update Profile</h2>
+                    <div class="card setting-card">
+                        <h2>Email</h2>
+                        <input type="email" placeholder="Enter your Email Address" name="email">
+                        <h2>Password</h2>
+                        <input type="password" placeholder="Enter your Password" name="password">
+                        <div class="btn1">Save</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="personal-info">
+                <h2>Personal Information</h2>
+                <div class="card">
+                    <div class="setting-info">
+                        <h3>Info</h3>
+                        <input type="text">
+                    </div>
+                    <div class="setting-info">
+                        <h3>Info</h3>
+                        <input type="text">
+                    </div>
+                    <div class="setting-info">
+                        <h3>Info</h3>
+                        <input type="text">
+                    </div>
+                    <div class="setting-info">
+                        <h3>Info</h3>
+                        <input type="text">
+                    </div>
+                    <div class="setting-info">
+                        <h3>Info</h3>
+                        <input type="text">
+                    </div>
+                    <div class="setting-info">
+                        <h3>Info</h3>
+                        <input type="text">
+                    </div>
+                    <div class="btn1">Save</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="nft.js"></script>
+
+</body>
