@@ -1,24 +1,44 @@
-let initialTheme = true;
-let themebtn = document.getElementById("theme");
-let notibtn = document.getElementById("notification");
-let searchbar = document.getElementById("searchbar");
-function toggleColors() {   
+const lightTheme = {
+    '--mainbg': '#F2F2F2',
+    '--secondbg': '#FFFFFF',
+    '--white': '#000000'
+};
+
+const darkTheme = {
+    '--mainbg': '#131129',
+    '--secondbg': '#1D1932',
+    '--white': '#FFFFFF'
+};
+
+const elementsToInvert = ['theme', 'notification', 'searchbar'].map(id => document.getElementById(id));
+
+function applyTheme(theme, invertElements = false) {
     const root = document.documentElement;
-    if(initialTheme){
-        root.style.setProperty('--mainbg', '#F2F2F2');
-        root.style.setProperty('--secondbg', '#FFFFFF');
-        root.style.setProperty('--white', '#000000');
-        themebtn.style.filter = 'invert()';
-        notibtn.style.filter = 'invert()';
-        searchbar.style.filter = 'invert()';
-        initialTheme = false;
-    }else{
-        root.style.setProperty('--mainbg', '#131129');
-        root.style.setProperty('--secondbg', '#1D1932');
-        root.style.setProperty('--white', '#FFFFFF');
-        themebtn.style.filter = '';
-        notibtn.style.filter = '';
-        searchbar.style.filter = '';
-        initialTheme = true;
-    }
+    Object.keys(theme).forEach(key => {
+        root.style.setProperty(key, theme[key]);
+    });
+
+    elementsToInvert.forEach(element => {
+        element.style.filter = invertElements ? '' : 'invert()';
+    });
 }
+
+function toggleColors() {
+    const isDarkMode = localStorage.getItem('theme') === 'dark';
+    const newTheme = isDarkMode ? lightTheme : darkTheme;
+    const shouldInvert = !isDarkMode;
+
+    applyTheme(newTheme, shouldInvert);
+
+    localStorage.setItem('theme', isDarkMode ? 'light' : 'dark');
+}
+
+function loadTheme() {
+    const isDarkMode = localStorage.getItem('theme') === 'dark';
+    const theme = isDarkMode ? darkTheme : lightTheme;
+    const shouldInvert = isDarkMode;
+
+    applyTheme(theme, shouldInvert);
+}
+
+document.addEventListener('DOMContentLoaded', loadTheme);
